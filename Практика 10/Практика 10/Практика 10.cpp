@@ -6,9 +6,9 @@ int main()
     setlocale(LC_ALL, "RUS");
     int A, B,C,D,S;
     cout<<"\t\t\t\t_________Первое задание_________"<<endl;
-    cout << "Введите первое число A:" << endl;
+    cout << "Введите  число A:" << endl;
     cin >> A;
-    cout << "Введите первое число B:" << endl;
+    cout << "Введите  число B:" << endl;
     cin >> B;
     if ((A > 2) && (B <= 3))
         cout << "Неравенство справедливо." << endl;
