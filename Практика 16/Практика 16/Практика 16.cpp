@@ -9,18 +9,18 @@ int main()
 	cout << "\t\t\t\t______Первое задание______" << endl;
 	cout << "Введите N" << endl;
 	cin >> N;
-	int *arr = new int[N/2+1];//Создаю динамический массив
+	int *a1 = new int[N/2+1];//Создаю динамический массив
 	int k = 1;
 	for (int i = 0; i < N / 2 + 1; i++)
 	{
-		arr[i] = k;
+		a1[i] = k;
 		k += 2;
 	}
 	for (int i = 0; i < N / 2 + 1; i++)
 	{
-		cout << arr[i] << endl;
+		cout << a1[i] << endl;
 	}
-	delete []arr//Удаляю динамический массив
+	delete[]a1;//Удаляю динамический массив
 	
 
 
@@ -32,19 +32,19 @@ int main()
 	cout << "Введите D" << endl;
 	cin >> D;
 	cout << endl;
-	int* arr = new int[N];
-	arr[0] = A;
+	int *a2 = new int[N];
+	a2[0] = A;
 	int l = 1;
 	for (int i = 1; i < N; i++)
 	{
-		arr[i] = A*pow(D,l);
+		a2[i] = A*pow(D,l);
 		l++;
 	}
 	for (int i = 0; i < N; i++)
 	{
-		cout << arr[i] << endl;
+		cout << a2[i] << endl;
 	}
-	delete[]arr;
+	delete[]a2;
 	
 
 	cout << "\t\t\t\t______Третье задание______" << endl;
@@ -55,51 +55,52 @@ int main()
 	cout << "Введите число В:" << endl;
 	cin >> B;
 	cout << endl;
-	int* arr = new int[N];
-	arr[0] = A;
-	arr[1] = B;
+	int *a3 = new int[N];
+	a3[0] = A;
+	a3[1] = B;
 	for (int i = 2; i < N; i++)
-		arr[i] = arr[i - 1] + arr[i-2];
+		a3[i] = a3[i - 1] + a3[i-2];
 	for (int i = 0; i < N; i++)
 	{
-		cout << arr[i] << endl;
+		cout << a3[i] << endl;
 	}
-	delete[]arr;
+	delete[]a3;
 	
 
 	cout << "\t\t\t\t______Четвертое задание______" << endl;
 	cout << "Введите N" << endl;
 	cin >> N;
-	int* arr = new int[N];
+	int *a4 = new int[N];
 	for (int i = 0; i < N; i++)
 	{
-		arr[i] = i;
+		a4[i] = i;
 	}
 	for (int i = 1; i < N/2; i++)
 	{
-		cout << arr[i] << endl;
-		cout << arr[N - i] << endl;
+		cout << a4[i] << endl;
+		cout << a4[N - i] << endl;
 	}
-	delete[]arr;
+	delete[]a4;
 	
 
 	cout << "\t\t\t\t______Пятое задание______" << endl;
 	cout << "Введите N" << endl;
 	cin >> N;
-	int* arr = new int[N];
+	int *a5 = new int[N];
 	for (int i = 0; i < N; i++)
-		arr[i] = i;
+		a5[i] = i;
 	for (int i = 0; i < N; i++)
 	{
 		if (i % 2 == 0)
-			cout << arr[i] << endl;
+			cout << a5[i] << endl;
 	}
 	cout << endl;
-	for (int i = N; i >0; i--)
+	for (int i = N-1; i >0; i--)
 	{
 		if (i % 2 != 0)
-			cout << arr[i] << endl;
+			cout << a5[i] << endl;
 	}
+	delete[]a5;
 
 	return 0;
 }
