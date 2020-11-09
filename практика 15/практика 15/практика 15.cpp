@@ -19,7 +19,7 @@ int Sign(double &X)
 }
 int Rings(double& R1, double& R2)
 {
-	double S=3.14*(R1*R1-R2*R2);
+	double S=abs(3.14*(R1*R1-R2*R2));
 	return S;
 	
 }
