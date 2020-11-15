@@ -34,7 +34,7 @@ int main()
     cout << endl;
     
     cout << "\t\t\t\t__________Второе задание__________" << endl;
-    int AA[] = { 1 2 3 4 5 };
+    int AA[] = { 1,2,3, 4, 5 };
     cout << "Массив А:" << endl << "1 2 3 4 5" << endl<<endl;
     for (int i = 0; i < n; i++)
     {
