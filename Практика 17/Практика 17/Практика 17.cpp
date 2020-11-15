@@ -96,21 +96,21 @@ int main()
 
 	 cout << "\t\t\t\t_________Пятое задание_________" << endl;
 	 int arr[] = { 2,55,31,3,1,168,41,351,35,12,5,2,4,6 };
-	 int a, b;
+	 int aa, bb;
 	 for (int i = 0; i < sizeof(arr)/4-1; i++)
 	 {
 		 for (int j = i+1; j < sizeof(arr) / 4; j++)
 		 {
 			 if (arr[i] == arr[j])
 			 {
-				 a = i;
-				 b = j;
+				 aa = i;
+				 bb = j;
 			 }
 		 }
 	 }
-	 if (a > b)
-		 cout << b <<" "<< a << endl;
-	 if (a < b)
-		 cout << a << " " << b << endl;
+	 if (aa > bb)
+		 cout << bb <<" "<< aa << endl;
+	 if (aa < bb)
+		 cout << aa << " " << bb << endl;
 	return 0;
 }
