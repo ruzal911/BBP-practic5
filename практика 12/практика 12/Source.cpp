@@ -452,6 +452,7 @@ int main() {
 
     }
 
+    cout << endl;
 
     cout << "\t\t\t_________Пятое задание_________" << endl;
     int year;
@@ -460,23 +461,23 @@ int main() {
     switch (year % 10) {
     case 0:
     case 1:
-        cout << "бел ";
+        cout << "белой ";
         break;
     case 2:
     case 3:
-        cout << "черн ";
+        cout << "черной ";
         break;
     case 4:
     case 5:
-        cout << "зелён ";
+        cout << "зелёной ";
         break;
     case 6:
     case 7:
-        cout << "красн ";
+        cout << "красной ";
         break;
     case 8:
     case 9:
-        cout << "жёлт ";
+        cout << "жёлтой ";
         break;
     }
     switch ((year + 8) % 12) {
